@@ -21,7 +21,7 @@ int main()
     do
     {
         cout << "-------MENU PRINCIPAL-------" << endl;
-        cout << "Ingrese la opción deseada: " << endl;
+        cout << "Ingrese la opciÃ³n deseada: " << endl;
         cout << "1. Agendar cita" << endl;
         cout << "2. Modificar cita" << endl;
         cout << "3. Eliminar cita" << endl;
@@ -37,15 +37,15 @@ int main()
             do
             {
                 Numero_de_cita = Numero_de_cita + 1;
-                cout << "Ingrese nombre del paciente:" << endl; //ver si puedo agregar segundo nombre y apellidos
+                cout << "Ingrese nombre del paciente:" << endl; 
                 cin.ignore();
                 getline(cin, Nombre_del_paciente);
-                cout << "Ingrese hora del tratamiento:" << endl; //agregar formato de 24 hrs//se salta variables al poner ":".
+                cout << "Ingrese hora del tratamiento:" << endl; 
                 cin >> Hora;
-                cout << "Ingrese nombre del tratamiento:" << endl; //falta saber poner espacios sin que termine el programa
+                cout << "Ingrese nombre del tratamiento:" << endl; 
                 cin.ignore();
                 getline(cin, Nombre_del_tratamiento);
-                cout << "Ingrese descripción del tratamiento:" << endl; //falta saber poner espacios sin que termine el programa
+                cout << "Ingrese descripciÃ³n del tratamiento:" << endl; 
                 cin.ignore();
                 getline(cin, Descripcion);
                 cout << "Ingrese precio unitario del tratamiento:" << endl;
@@ -67,7 +67,7 @@ int main()
                 cout << "Precio unitario: $" << Precio_unitario << endl;
                 cout << "Total: $" << Total << endl;
                 cout << "-----------------------" << endl;
-                cout << "¿Desea agendar otra cita?" << endl;
+                cout << "Â¿Desea agendar otra cita?" << endl;
                 cout << "1.Si    2.No" << endl;
                 cin >> Decision;
             } while (Decision == 1);
@@ -87,12 +87,12 @@ int main()
             Salida = Salida + 1;
             break;
         default:
-            cout << "No se ingreso una opción valida." << endl;
+            cout << "No se ingreso una opciÃ³n valida." << endl;
             break;
         }
         if (Salida == 0)
         {
-            cout << "¿Desea regresar al menu?" << endl;
+            cout << "Â¿Desea regresar al menu?" << endl;
             cout << "1.Si    2.No" << endl;
             cin >> Decision;
         }
